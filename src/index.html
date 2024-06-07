@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" >
+                <img src="Images/Picsart_24-06-05_16-35-07-285.png" class="logo">
+            </a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Tasty<br>It's <span>Delicious</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, ratione illum quidem natus sit deserunt maxime ea iusto consequuntur laboriosam commodi est pariatur, nobis, delectus aperiam aspernatur? Alias, aut sunt!</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="Images/Picsart_24-06-05_16-31-01-298.png" class="food">
+            </div>
+        </div>
+        <ul class="change">
+            <li><img src="Images/Picsart_24-06-05_16-31-01-298.png" onclick="changeFood('Images/Picsart_24-06-05_16-31-01-298.png');changeCircle('#017143')"></li>
+            <li><img src="Images/Picsart_24-06-05_16-31-34-455.png" onclick="changeFood('Images/Picsart_24-06-05_16-31-34-455.png');changeCircle('#233542')"></li>
+            <li><img src="Images/Picsart_24-06-05_16-32-00-546.png" onclick="changeFood('Images/Picsart_24-06-05_16-32-00-546.png');changeCircle('#f0823d')"></li>
+        </ul>
+        <ul class="logos">
+            <li><a href=""><img src="Images/Face.png" alt=""></a></li>
+            <li><a href=""><img src="Images/insta.webp" alt=""></a></li>
+            <li><a href=""><img src="Images/twitter.png" alt=""></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function changeFood(anything){
+            document.querySelector('.food').src=anything;
+        }
+
+        function changeCircle(color){
+            const circle=document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
